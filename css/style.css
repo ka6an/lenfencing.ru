@@ -1,0 +1,554 @@
+/* font-family: "GothamProRegular"; */
+
+@font-face {
+    font-family: "GP_r";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"), url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "GothamProBold"; */
+
+@font-face {
+    font-family: "GP_b";
+    src: url("../fonts/GothaProBol.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: GP_r;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.content {
+    margin: auto;
+    width: 1200px;
+}
+
+header {
+    color: #fff;
+    height: 80px;
+    width: 100%;
+    background-color: #0d2540;
+}
+
+nav {
+    margin-left: 40%;
+}
+
+nav ul li {
+    display: inline-flex;
+    margin-left: 9%;
+}
+
+nav ul li p a {
+    font-size: 10px;
+    text-transform: uppercase;
+    height: 80px;
+    display: inline-block;
+    position: relative;
+    font-family: GP_b;
+    line-height: 80px;
+}
+
+nav ul li div {
+    display: none;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li.dropdown p a:after {
+    font-size: 6px;
+    display: inline-block;
+    content: "";
+    position: relative;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 4px solid #cccccc;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    margin: auto;
+    top: 0;
+    transform: translate(10px, -2px);
+}
+
+section.bg_1 {
+    background: url(../img/bg_1.jpg) no-repeat top;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1100px) {
+    nav {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        display: none;
+    }
+}
+
+section.main_info {
+    overflow: hidden;
+    padding: 20px 10px 50px;
+}
+
+.calendar,
+.important {
+    color: #0d2540;
+    background: #fff;
+    text-align: left;
+}
+
+.important {
+    width: 380px;
+    float: right;
+    position: relative;
+    height: 236px;
+}
+
+.calendar {
+    width: 580px;
+    float: left;
+}
+
+.calendar div.title,
+.important div.title {
+    color: #fff;
+    background: #0d2540;
+    width: 100%;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+.calendar div.title h2,
+.important div.title h2,
+.calendar div.title p,
+.important div.title p {
+    font-family: GP_r;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 60px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.calendar div.title p,
+.important div.title p {
+    font-family: GP_r;
+    font-size: 10px;
+    text-transform: lowercase;
+}
+
+.calendar div.title h2 {
+    padding-right: 35px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.calendar div.title h2:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 18px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.calendar ul {
+    display: table;
+    margin-top: 25px;
+}
+
+.calendar .cont,
+.important .bot {
+    padding: 20px 40px;
+}
+
+.calendar ul li {
+    display: table-cell;
+    vertical-align: baseline;
+}
+
+.calendar ul li p {
+    font-size: 12px;
+    color: #0d2540;
+}
+
+.calendar ul li p b {
+    font-family: GP_b;
+}
+
+ul.header {
+    width: 100%;
+    border-bottom: 1px solid #0d2540;
+    margin: 0;
+}
+
+ul.header li p {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.calendar ul li:first-child {
+    width: 90px;
+}
+
+.calendar ul li:nth-child(2n + 2) {
+    width: 320px;
+}
+
+.important .news p.date {
+    font-family: GP_b;
+    margin-bottom: 15px;
+}
+
+.important .news p {
+    font-size: 12px;
+}
+
+.bot ul.points,
+.bot p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bot ul.points li {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border: 1px solid #0d2540;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.bot ul.points li.current,
+.bot ul.points li:hover {
+    background: #0d2540;
+}
+
+.important .cont {
+    padding: 20px 10px 20px 20px;
+    transition: opacity 0s ease, visibility 0s ease, transform .5s ease;
+    position: absolute;
+    left: 40px;
+}
+
+.important .cont:not(.current) {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.bot ul.points:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #0d2540;
+    top: 0;
+    right: 0;
+    ;
+}
+
+.bot ul.points {
+    ;
+    position: relative;
+    ;
+    margin-right: 10px;
+}
+
+.bot p {
+    font-family: GP_b;
+    font-size: 10px;
+}
+
+section.main {
+    overflow: hidden;
+    height: 370px;
+}
+
+.navigation_fixed {
+    width: 28.9%;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 50px 0 0 30px;
+    background: #0d2540;
+}
+
+.navigation_fixed ul li {
+    line-height: 18px;
+    transition: all .4s ease;
+    transform-origin: 0 50%;
+    cursor: pointer;
+}
+
+.navigation_fixed ul li.fs_18 {
+    transform: scale(1.4);
+}
+
+.navigation_fixed ul li.fs_12 {
+    transform: scale(1);
+}
+
+.navigation_fixed ul li.fs_8 {
+    transform: scale(0.8);
+}
+
+.navigation_fixed ul li p {
+    font-size: 12px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.navigation_fixed ul li p span {
+    font-size: 7px;
+    text-transform: lowercase;
+}
+
+#item_1_cont,
+#item_2_cont {
+    width: 71.1%;
+    background: #fff;
+}
+
+.navigation_fixed,
+#item_1_cont,
+#item_2_cont {
+    float: left;
+    overflow: hidden;
+    height: 100%;
+}
+
+.navigation_fixed ul li p + p {
+    display: none;
+}
+
+.navigation_fixed ul li.fs_18 p + p {
+    position: relative;
+    border-left: 1px solid #fff;
+    padding-left: 10px;
+    margin-left: 15px;
+    display: inline-block;
+    font-size: 5px;
+}
+
+.navigation_fixed ul li.fs_18:first-child {
+    padding-bottom: 10px;
+}
+
+.navigation_fixed ul li.fs_18:last-child {
+    padding-top: 10px;
+}
+
+.navigation_fixed ul li.fs_18:nth-child(2n) {
+    padding: 5px 0;
+}
+
+.navigation_fixed ul li p a {
+    font-family: GP_b;
+    line-height: 18px;
+}
+
+.navigation_fixed ul li:not(.active),
+.navigation_fixed ul li:not(.fs_18) {
+    color: #999;
+}
+
+.navigation_fixed ul li:hover {
+    color: #fff;
+}
+
+.important .cont.current {
+    transform: translateX(-30px);
+}
+
+.important .bot {
+    transform: translateY(115px);
+}
+
+#item_2_cont {
+    background: #0d2540;
+}
+
+.category p {
+    color: #fff;
+    display: inline-block;
+    line-height: 100px;
+    width: 40%;
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+.category p.active,
+.category p:hover {
+    font-size: 16px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.blocks {
+    background: #cccccc;
+    width: 130px;
+    height: 130px;
+    float: left;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.category {
+    height: 100px;
+}
