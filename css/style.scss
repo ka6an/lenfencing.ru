@@ -1,28 +1,24 @@
 @import "../sass/susy";
+@import "reset";
 $susy: (
-  flow: ltr, 
-  math: static, 
-  output: float,
-  gutter-position: after,
-  container: auto, 
-  container-position: center, 
-  columns: 12, 
-  gutters: 20px, 
-  column-width: 80px, 
-  global-box-sizing: content-box, 
-  last-flow: to, 
-  debug: (
-    image: hide,
-    color: rgba(#66f, .25), 
-    output: background,
-    toggle: top right, 
-  ),
-  use-custom: ( 
-    background-image: true, 
-    background-options: false, 
-    box-sizing: true, 
-    clearfix: false, 
-    rem: true,
-  )
+  columns: 12,
+  container: 1180px,
 );
 @include border-box-sizing;
+
+.content{
+  @include container;
+}
+
+.content > section{
+  @include span(12);
+}
+.navigation{
+  @include span(6);
+}
+.right-bar{
+  @include span(6 last);
+  & .actual, & .ads{
+    @include span(12);
+  }
+}
